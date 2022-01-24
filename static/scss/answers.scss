@@ -39,15 +39,14 @@
     padding: .5rem 1rem;
     transition: all .3s ease-in-out;
     cursor: pointer;
-    border: none;
+    border: 1px solid white;
     text-transform: none;
   }
   .HitchhikerCTA:hover {
-    background: var(--yxt-color-brand-primary);
-    background-color: rgb(190, 190, 190);
+    background-color: black;
     text-decoration: none;
-    color: var(--yxt-color-brand-primary);
-    border-color: var(--yxt-color-brand-primary);
+    color: white;
+    border: 1px solid var(--yxt-color-brand-primary);
   }
 
 //View More
@@ -88,7 +87,7 @@
 }
 
 //Headers
-.HitchhikerResultsStandard-title, .HitchhikerResultsGridThreeColumns-title, .yxt-QuestionSubmission-titleBar {
+.HitchhikerResultsStandard-title, .HitchhikerResultsGridThreeColumns-title, .yxt-QuestionSubmission-titleBar, .HitchhikerResultsGridTwoColumns-title {
     font-family: var(--yxt-font-family);
     font-size: var(--yxt-font-size-md-lg);
     line-height: var(--yxt-line-height-lg);
@@ -104,7 +103,7 @@
     align-items: flex-end;
     background-color: var(--yxt-color-brand-primary);
 }
-.HitchhikerResultsStandard-titleLabel, .HitchhikerResultsGridThreeColumns-titleLabel, .Answers-qaSubmission .yxt-QuestionSubmission-title {
+.HitchhikerResultsStandard-titleLabel, .HitchhikerResultsGridThreeColumns-titleLabel, .Answers-qaSubmission .yxt-QuestionSubmission-title, .HitchhikerResultsGridTwoColumns-titleLabel {
     font-family: var(--yxt-font-family);
     font-size: var(--yxt-font-size-xlg);
     line-height: var(--yxt-line-height-lg);
@@ -112,7 +111,7 @@
     font-style: normal;
     color: white;
 }
-.HitchhikerResultsStandard-title svg, .HitchhikerResultsStandard-title img, .HitchhikerResultsGridThreeColumns-title svg, .HitchhikerResultsGridThreeColumns-title img, .yxt-QuestionSubmission-titleIconWrapper svg, .yxt-QuestionSubmission-toggle svg {
+.HitchhikerResultsStandard-title svg, .HitchhikerResultsStandard-title img, .HitchhikerResultsGridThreeColumns-title svg, .HitchhikerResultsGridThreeColumns-title img, .yxt-QuestionSubmission-titleIconWrapper svg, .yxt-QuestionSubmission-toggle svg, .HitchhikerResultsGridTwoColumns-title svg, .HitchhikerResultsGridTwoColumns-title img {
     color: white;
     height: var(--yxt-base-spacing);
     width: var(--yxt-base-spacing);
@@ -123,7 +122,14 @@
     font-weight: var(--yxt-font-weight-light);
     color: white;
 }
-
+.yxt-QuestionSubmission-submitButton:not(:disabled) {
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    border: 1px solid white;
+    &:hover {
+      border: 1px solid var(--yxt-color-brand-primary);
+    }
+}
 
 }
 
