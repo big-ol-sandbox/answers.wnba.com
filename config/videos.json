@@ -67,7 +67,7 @@
       "universalLimit": 12, // The result count limit for universal search
       "cardType": "multilang-product-prominentimage", // The name of the card to use - e.g. accordion, location, customcard 
       "icon": "window", // The icon to use on the card for this vertical
-      "universalSectionTemplate": "grid-three-columns"
+      "universalSectionTemplate": "grid-two-columns"
     }
   }
 }

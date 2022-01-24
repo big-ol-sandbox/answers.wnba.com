@@ -20,6 +20,7 @@
       }
     },
     "SearchBar": {
+      "allowEmptySearch": true,
       "placeholderText": "Type literally anything", // The placeholder text in the answers search bar
       "loadingIndicator": {
         "display": true //Optional, whether to include a loading indicator on seachbar
@@ -30,6 +31,11 @@
         // "customMicIconUrl": "", // Path to override the voice start icon
         // "customListeningIconUrl": "" // Path to override the voice stop icon
       }
+    }
+  },
+  "pageSettings": {
+    "search": {
+      "defaultInitialSearch": "" // Enter a default search term, should be your pinned query
     }
   },
   "verticalsToConfig": {
