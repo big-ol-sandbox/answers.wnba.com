@@ -7,7 +7,7 @@
     // /**
     "QASubmission": {
       "entityId": "organization-1", // Set the ID of the entity to use for Q&A submissions, must be of entity type "Organization"
-      "privacyPolicyUrl": "" // The fully qualified URL to the privacy policy
+      "privacyPolicyUrl": "https://www.nba.com/privacy-policy" // The fully qualified URL to the privacy policy
     },
     "DirectAnswer": {
       "types": {
@@ -20,7 +20,7 @@
       }
     },
     "SearchBar": {
-      "placeholderText": "Search", // The placeholder text in the answers search bar
+      "placeholderText": "Type literally anything", // The placeholder text in the answers search bar
       "loadingIndicator": {
         "display": true //Optional, whether to include a loading indicator on seachbar
         // "iconUrl": "" //Optional, use custom icon url instead of the default loading indicator animation
