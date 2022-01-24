@@ -33,7 +33,7 @@ class job_cardCardComponent extends BaseCard['job-card'] {
       // The primary CTA of the card
       CTA1: {
         label: 'Apply Now', // The CTA's label
-        // iconName: 'briefcase', // The icon to use for the CTA
+        // iconName: 'chevron', // The icon to use for the CTA
         url: profile.applicationUrl, // The URL a user will be directed to when clicking
         target: linkTarget, // Where the new URL will be opened
         eventType: 'CTA_CLICK', // Type of Analytics event fired when clicking the CTA
@@ -42,7 +42,7 @@ class job_cardCardComponent extends BaseCard['job-card'] {
       },
       CTA2: {
         label: 'Learn More', // The CTA's label
-        // iconName: 'briefcase', // The icon to use for the CTA
+        // iconName: 'kabob', // The icon to use for the CTA
         url: profile.landingPageUrl, // The URL a user will be directed to when clicking
         target: linkTarget, // Where the new URL will be opened
         eventType: 'CTA_CLICK', // Type of Analytics event fired when clicking the CTA

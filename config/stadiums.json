@@ -65,14 +65,14 @@
       "label": "Stadiums", // The name of the vertical in the section header and the navigation bar
       // "verticalLimit": 15, // The result count limit for vertical search
       "universalLimit": 4, // The result count limit for universal search
-      "cardType": "location-standard", // The name of the card to use - e.g. accordion, location, customcard 
+      "cardType": "stadium-card", // The name of the card to use - e.g. accordion, location, customcard 
       "icon": "pin", // The icon to use on the card for this vertical
       "mapConfig": {
-        "mapProvider": "MapBox", // The name of the provider (e.g. Mapbox, Google)
+        "mapProvider": "Google", // The name of the provider (e.g. Mapbox, Google)
         "pin": {
-          "backgroundColor": "", // Enter a hex value or color for the pin background
-          "labelColor": "", // Enter a hex value or color for the label color
-          "strokeColor": "" // Enter a hex value or color for the stroke color
+          "backgroundColor": "#F54D01", // Enter a hex value or color for the pin background
+          "labelColor": "white", // Enter a hex value or color for the label color
+          "strokeColor": "black" // Enter a hex value or color for the stroke color
         },
         "noResults": {
           "displayAllResults": true, // Set to FALSE to hide results on the map when a search returns no results
