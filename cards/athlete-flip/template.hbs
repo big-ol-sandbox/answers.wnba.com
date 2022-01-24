@@ -1,0 +1,101 @@
+<div class="HitchhikerProductProminentImageClickable {{cardName}}">
+  <div class="flip-card-inner">
+    <div class="flip-card-front" style="background-image: url({{card.image}});">
+      {{#if card.url}}
+      <a class="HitchhikerProductProminentImageClickable-link"
+        href="{{#unless (isNonRelativeUrl card.url)}}{{@root.relativePath}}/{{/unless}}{{card.url}}"
+        target={{#if card.target}}"{{card.target}}"{{else}}"_top"{{/if}}
+        data-eventtype="TITLE_CLICK"
+        data-eventoptions='{{json card.titleEventOptions}}'
+      >
+      {{/if}}
+        {{> image }}
+        <div class="HitchhikerProductProminentImageClickable-body">
+          {{> title }}
+          {{> subtitle }}
+          <div class="HitchhikerProductProminentImageClickable-contentWrapper">
+            {{> details }}
+          </div>
+          {{> thumbsfeedback card feedbackSubmitted=feedbackSubmitted}}
+        </div>
+      {{#if card.url}}</a>{{/if}}
+    </div>
+    <div class="flip-card-back">
+      {{> stats}}
+    </div>
+  </div>
+</div>
+
+{{#*inline 'image'}}
+{{#if (all card.image card.tag) }}
+<div class="HitchhikerProductProminentImage-imageAndTagWrapper">
+  <div class="HitchhikerProductProminentImage-tagWrapper">
+    <div class="HitchhikerProductProminentImage-tag">
+      {{card.tag}}
+    </div>
+  </div>
+{{/if}}
+  {{#if card.image}}
+  <div class="HitchhikerProductProminentImage-imgWrapper">
+    <img class="HitchhikerProductProminentImage-img" src="{{#unless (isNonRelativeUrl card.image)}}{{@root.relativePath}}/{{/unless}}{{card.image}}" alt="{{#if card.altText}}{{card.altText}}{{/if}}" />
+    <div class="HitchhikerProductProminentImageClickable-body">
+      {{> title }}
+      <div class="HitchhikerProductProminentImageClickable-contentWrapper">
+        {{> subtitle }}
+        {{> details }}
+      </div>
+    </div>
+  </div>
+  {{/if}}
+{{#if (all card.image card.tag) }}
+</div>
+{{/if}}
+{{/inline}}
+
+{{#*inline 'title'}}
+{{#if card.title}}
+<div class="HitchhikerProductProminentImageClickable-title">
+  {{card.title}}
+</div>
+{{/if}}
+{{/inline}}
+
+{{#*inline 'subtitle'}}
+{{#if card.subtitle}}
+<div class="HitchhikerProductProminentImageClickable-subtitle">
+  {{card.subtitle}}
+</div>
+{{/if}}
+{{/inline}}
+
+{{! Displays the details for the card. }}
+{{#*inline 'details'}}
+{{#if card.details}}
+<div class="HitchhikerProductProminentImageClickable-cardDetails">
+  <div class="HitchhikerProductProminentImageClickable-detailsText js-HitchhikerCard-detailsText{{#if showExcessDetailsToggle}} js-hidden{{/if}}">
+    {{{card.details}}}
+  </div>
+</div>
+{{/if}}
+{{/inline}}
+
+{{! Displays the stats for the card. }}
+{{#*inline 'stats'}}
+{{#if (all card.height card.weight card.dateofbirth card.yearspro) }}
+<div class="HitchhikerProductProminentImageClickable-playerStats">
+    <ul>
+      <li id="playerName">{{card.title}}</li>
+      <li id="playerPosition">{{card.position}}</li>
+      <li id="statList">
+          <span id="listLabel">Player Information</span>
+          <ul>
+              <li>{{card.height}}</li>
+              <li>{{card.weight}}</li>
+              <li>{{card.dateofbirth}}</li>
+              <li>{{card.yearspro}}</li>
+          </ul>
+      </li>
+    </ul>
+</div>
+{{/if}}
+{{/inline}}

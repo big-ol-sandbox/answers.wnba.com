@@ -131,6 +131,185 @@
     }
 }
 
+//FAQs
+.HitchhikerFaqAccordion-ctasWrapper {
+    display: flex;
+    flex-direction: row;
+    margin: calc(var(--yxt-base-spacing) / 2) var(--yxt-base-spacing);
+    padding-bottom: calc(var(--yxt-base-spacing) / 2);
+}
+.HitchhikerFaqAccordion-primaryCTA, .HitchhikerFaqAccordion-secondaryCTA {
+    display: flex;
+    margin-left: 5px;
+    margin-top: 0px;
+}
+
+//News
+.HitchhikerProductStandard {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--yxt-font-size-md);
+    line-height: var(--yxt-line-height-md);
+    background-color: var(--yxt-color-brand-white);
+    padding: calc(var(--yxt-base-spacing) * 3/4) var(--yxt-base-spacing);
+    width: 100%;
+    height: 100%;
+}
+.HitchhikerProductStandard-imgWrapper {
+    width: 100%;
+    margin-right: 1rem;
+}
+
+//Athlete
+.HitchhikerProductProminentImageClickable-body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    justify-content: flex-end;
+    flex-direction: column;
+    display: flex;
+    padding: 10px;
+  }
+  .HitchhikerProductProminentImageClickable-name {
+    color: white;
+    font-size: 22px;
+    letter-spacing: .25px;
+    text-transform: uppercase;
+    word-break: break-word;
+  }
+  .HitchhikerProductProminentImageClickable-contentWrapper {
+    border-top: 2px solid rgba(255,255,255,0.25);
+    padding-top: 4px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+.HitchhikerProductProminentImage-imgWrapper {
+    align-items: center;
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.flip-card-front {
+  background-size: cover;
+  background-position-x: center;
+}
+.HitchhikerProductProminentImageClickable-subtitle {
+    color: white;
+}
+.HitchhikerProductProminentImageClickable-title {
+    font-family: var(--yxt-font-family);
+    font-size: var(--yxt-font-size-lg);
+    line-height: var(--yxt-line-height-lg);
+    font-weight: var(--yxt-font-weight-semibold);
+    font-style: normal;
+    color: white;
+}
+
+// card flip stylings
+.HitchhikerProductProminentImageClickable.athlete-flip {
+  background-color: transparent;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  height: 400px;
+}
+
+.HitchhikerProductProminentImageClickable.athlete-flip {
+  background-image: linear-gradient(to right,#515151,#8a8a8a);
+}
+
+
+// .athlete-flip .HitchhikerProductProminentImageClickable-body {
+//   background: rgba(0, 0, 0, 0.2);
+// }
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.HitchhikerProductProminentImageClickable.athlete-flip:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+// .HitchhikerProductProminentImageClickable.athlete-flip:hover .flip-card-front {
+//   opacity: 0;
+// }
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: black;
+  color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 10px;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background: black;
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.HitchhikerProductProminentImageClickable:hover {
+  box-shadow: none;
+  top: 0;
+}
+
+#listLabel {
+  text-decoration: underline;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+li#playerName {
+  font-size: larger;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+li#playerPosition {
+  padding-bottom: 10px;
+}
+
+.athlete-flip .HitchhikerProductProminentImage-imgWrapper {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 // .Overlay
