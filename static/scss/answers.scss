@@ -330,7 +330,6 @@ li#playerPosition {
 
 //Stadiums
 .HitchhikerLocationStandard-imgWrapper {
-    display: flex;
     align-items: flex-start;
     position: relative;
     width: 100%;
@@ -346,9 +345,22 @@ li#playerPosition {
     flex-direction: column;
 }
 
-
-
-
+//Teams
+div[component="teams-card"] .HitchhikerProductProminentImage-img {
+    width: fit-content;
+    height: 150px;
+    object-fit: cover;
+    font-family: "object-fit: cover;";
+}
+div[component="teams-card"] .HitchhikerProductProminentImage-primaryCTA, .HitchhikerProductProminentImage-secondaryCTA, .HitchhikerProductProminentImage-tertiaryCTA {
+    display: flex;
+    margin-left: 2px;
+}
+.HitchhikerProductProminentImage-tertiaryCTA {
+    display: flex;
+    margin-left: 2px;
+    margin-top: calc(var(--yxt-base-spacing) / 2);
+}
 
 
 }
