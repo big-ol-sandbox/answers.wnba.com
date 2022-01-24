@@ -25,8 +25,9 @@
 }
 }
 .HitchhikerStandard.promo-card {
-   background-color: #7303FD;
-  }
+    background-image: linear-gradient(45deg, #7303FD, #C524C7);
+    border: 2px solid var(--yxt-color-brand-primary);
+}
 .HitchhikerResultsStandard-Card--universal {
   border-top: var(--yxt-border-default);
   }
