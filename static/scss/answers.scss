@@ -4,9 +4,129 @@
   //&-nav {
   //  padding-top: 32px;
   //}
+
+//Promotions
+.HitchhikerResultsStandard--promotions {
+  .HitchhikerResultsStandard-title {
+    display:none;
+  }
+  .HitchhikerResultsStandard-viewMore {
+    display:none;
+  }
+.HitchhikerStandard-detailsText {
+    color: white;
+}
+.HitchhikerStandard-title {
+    text-decoration: none;
+    font-size: var(--yxt-font-size-lg);
+    line-height: var(--yxt-line-height-lg);
+    font-weight: var(--yxt-font-weight-semibold);
+    color: white;
+}
+}
+.HitchhikerStandard.promo-card {
+   background-color: #7303FD;
+  }
+.HitchhikerResultsStandard-Card--universal {
+  border-top: var(--yxt-border-default);
+  }
+
+//CTAs
+.HitchhikerCTA  {
+    color: #fff;
+    background: var(--yxt-color-brand-primary);
+    padding: .5rem 1rem;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    border: none;
+    text-transform: none;
+  }
+  .HitchhikerCTA:hover {
+    background: var(--yxt-color-brand-primary);
+    background-color: rgb(190, 190, 190);
+    text-decoration: none;
+    color: var(--yxt-color-brand-primary);
+    border-color: var(--yxt-color-brand-primary);
+  }
+
+//View More
+.HitchhikerResultsGridTwoColumns-viewMore, .HitchhikerResultsGridThreeColumns-viewMore, .HitchhikerResultsStandard-viewMore {
+    background: white;
+    border: none;
+    transition: all .3s ease-in-out;
+    border-radius: 0px;
+    &:hover {
+      background: rgb(205, 205, 205);
+    }
+  }
+.HitchhikerResultsStandard-viewMoreLabel, .HitchhikerResultsGridTwoColumns-viewMoreLabel, .HitchhikerResultsGridThreeColumns-viewMoreLabel {
+    margin-right: calc(var(--yxt-base-spacing) / 2);
+    font-family: var(--yxt-font-family);
+    font-size: var(--yxt-font-size-xlg);
+    line-height: var(--yxt-line-height-lg);
+    font-weight: var(--yxt-font-weight-bold);
+    font-style: normal;
+    background: -webkit-linear-gradient(var(--yxt-color-brand-primary), var(--yxt-color-brand-secondary));
+}
+.HitchhikerResultsGridThreeColumns-viewMoreLink:hover,
+  .HitchhikerResultsGridThreeColumns-viewMoreLink:focus,
+  .HitchhikerResultsGridThreeColumns-viewMoreLink:active,
+  .HitchhikerResultsStandard-viewMoreLink:hover,
+  .HitchhikerResultsStandard-viewMoreLink:focus,
+  .HitchhikerResultsStandard-viewMoreLink:active,
+  .HitchhikerResultsGridTwoColumns-viewMoreLink:hover,
+  .HitchhikerResultsGridTwoColumns-viewMoreLink:focus,
+  .HitchhikerResultsGridTwoColumns-viewMoreLink:active,
+  .HitchhikerEventStandard-viewMoreLink:hover,
+  .HitchhikerEventStandard-viewMoreLink:focus,
+  .HitchhikerEventStandard-viewMoreLink:active {
+    text-decoration: none;
+  }
+.HitchhikerResultsGridThreeColumns-viewMore svg, .HitchhikerResultsGridThreeColumns-viewMore img, .HitchhikerResultsGridTwoColumns-viewMore svg, .HitchhikerResultsGridTwoColumns-viewMore img, .HitchhikerResultsStandard-viewMore svg, .HitchhikerResultsStandard-viewMore img {
+  display: none;
 }
 
-.Overlay
-{
-  // Insert Overlay styling here
+//Headers
+.HitchhikerResultsStandard-title, .HitchhikerResultsGridThreeColumns-title, .yxt-QuestionSubmission-titleBar {
+    font-family: var(--yxt-font-family);
+    font-size: var(--yxt-font-size-md-lg);
+    line-height: var(--yxt-line-height-lg);
+    font-weight: var(--yxt-font-weight-bold);
+    font-style: normal;
+    color: white;
+    margin: 0;
+    border: var(--yxt-border-default);
+    border-top-left-radius: var(--yxt-border-radius);
+    border-top-right-radius: var(--yxt-border-radius);
+    display: flex;
+    padding: calc(var(--yxt-base-spacing) / 2) var(--yxt-base-spacing);
+    align-items: flex-end;
+    background-color: var(--yxt-color-brand-primary);
 }
+.HitchhikerResultsStandard-titleLabel, .HitchhikerResultsGridThreeColumns-titleLabel, .Answers-qaSubmission .yxt-QuestionSubmission-title {
+    font-family: var(--yxt-font-family);
+    font-size: var(--yxt-font-size-xlg);
+    line-height: var(--yxt-line-height-lg);
+    font-weight: var(--yxt-font-weight-bold);
+    font-style: normal;
+    color: white;
+}
+.HitchhikerResultsStandard-title svg, .HitchhikerResultsStandard-title img, .HitchhikerResultsGridThreeColumns-title svg, .HitchhikerResultsGridThreeColumns-title img, .yxt-QuestionSubmission-titleIconWrapper svg, .yxt-QuestionSubmission-toggle svg {
+    color: white;
+    height: var(--yxt-base-spacing);
+    width: var(--yxt-base-spacing);
+}
+
+//Q&A
+.Answers-qaSubmission .yxt-QuestionSubmission-titleDescription {
+    font-weight: var(--yxt-font-weight-light);
+    color: white;
+}
+
+
+}
+
+// .Overlay
+// {
+//   // Insert Overlay styling here
+// }

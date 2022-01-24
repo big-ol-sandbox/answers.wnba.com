@@ -36,6 +36,12 @@
     "Universal": {
       "isFirst": "true", // Indicates that this should always appear first in the navigation bar
       "label": "All" // The name of the universal tab in the navigation bar
+    },
+    "promotions": { // The vertical key from your search configuration
+      "label": "", // The name of the vertical in the section header and the navigation bar
+      "hideInNavigation": true, // hides navbar tab
+      "universalLimit": 1, // ensures only one result
+      "cardType": "promo-card" // forked card name
     }
   }
 }
