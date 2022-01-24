@@ -20,8 +20,38 @@
     "Facets": {
       "expand": false, // Allow the user to expand and collapse the facets
       "showMore": false, // Display a link to see more facet options within a facet
-      "searchOnChange": true // Will automatically run a search as facets are selected or unselected. Set to false to only trigger updates with an Apply button. 
+      "searchOnChange": true, // Will automatically run a search as facets are selected or unselected. Set to false to only trigger updates with an Apply button. 
       // Additional options are available in the documentation
+      "fields": {
+        "targetGender": {
+          "label": "Gender",
+          "expand": false,
+          "showMore": false
+        },
+        "targetAgeGroup": {
+          "label": "Age",
+          "expand": false,
+          "showMore": false
+        }
+      }
+    },
+    "SortOptions" : {
+      "options": [
+        {
+          "type": "FIELD",
+          "field": "price.value",
+          "direction": "ASC",
+          "label": "Price (Lowest to Highest)"
+        },
+        {
+          "type": "FIELD",
+          "field": "price.value",
+          "direction": "DESC",
+          "label": "Price (Highest to Lowest)"
+        }
+      ],
+      "searchOnChange": true,
+      "label": "Sort By"
     },
     /**
     "FilterLink": {
@@ -40,7 +70,7 @@
       "hideResultsHeader": true
     },
     "SearchBar": {
-      "placeholderText": "Search", // The placeholder text in the answers search bar
+      "placeholderText": "Type literally anything", // The placeholder text in the answers search bar
       "allowEmptySearch": true, // Allows users to submit an empty search in the searchbar
       "loadingIndicator": {
         "display": true //Optional, whether to include a loading indicator on seachbar

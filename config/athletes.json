@@ -23,10 +23,23 @@
       "searchOnChange": true, // Will automatically run a search as facets are selected or unselected. Set to false to only trigger updates with an Apply button. 
       // Additional options are available in the documentation,
       "fields": {
-        "c_linkedTeams[0].name": {
-          "fieldLabel": "Team",
+        "c_linkedTeams.name": {
+          "label": "Team",
           "expand": false,
-          "showMore": false
+          "showMore": true,
+          "searchable": true,
+          "showMoreLimit": 4,
+          "showMoreLabel": "More",
+          "showLessLabel": "Less"
+        },
+        "c_position": {
+          "label": "Position",
+          "expand": false,
+          "showMore": true,
+          "searchable": true,
+          "showMoreLimit": 3,
+          "showMoreLabel": "More",
+          "showLessLabel": "Less"
         }
       }
     },
@@ -47,7 +60,7 @@
       "hideResultsHeader": true
     },
     "SearchBar": {
-      "placeholderText": "Search", // The placeholder text in the answers search bar
+      "placeholderText": "Type literally anything", // The placeholder text in the answers search bar
       "allowEmptySearch": true, // Allows users to submit an empty search in the searchbar
       "loadingIndicator": {
         "display": true //Optional, whether to include a loading indicator on seachbar
